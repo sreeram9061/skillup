@@ -1,0 +1,24 @@
+@media(max-width:1137px){
+    .navcontainer ul{
+        display: none;
+    }
+    .menue{
+       
+        display: block;
+    }
+    .right_side_slide_navigation{
+        display: flex;
+    }
+
+}
+
+@media(max-width:700px){
+    nav{
+        padding: 0 20px;
+    }
+    .navcontainer img{
+        width: 90px;
+    }
+
+
+}
