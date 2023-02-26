@@ -13,9 +13,7 @@
 
 
 /****************this section is for nav_bar****************/
-body{
-    position: relative;
-}
+
 nav{
     width: 100%;
     height: auto;
@@ -42,14 +40,19 @@ nav{
     margin-right: 4px;
     height: 50px;
     align-items: center;
-    gap: 45px;
+    
 }
+.navcontainer ul li {
+    margin-left: 40px;
+}
+
 
 .navcontainer ul li a{
     text-decoration: none;
     color: black;
     transition: color cubic-bezier(0.77, 0.33, 0.58, 1) .3s;
     font-size: 16px;
+    
     
 
 }
