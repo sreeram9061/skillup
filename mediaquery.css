@@ -6,6 +6,24 @@
 
 }
 
+@media(max-width:1235px){
+    .scervices_section .scervices{
+        grid-template-areas: "card_1 card_2"
+                             "card_3 card_3";
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        
+      }
+      .scervices_section{
+        
+        margin-top: 160px;
+      }
+    
+
+}
+
 
 
 @media(max-width:1137px){
@@ -46,6 +64,26 @@
         text-align: center;
     }
 
+
+}
+
+@media(max-width:888px){
+    .scervices_section .scervices{
+        grid-template-areas: "card_1"
+                             "card_2"
+                             "card_3";
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px;
+        
+      }
+      .scervices_section{
+        padding:50px 20px;
+      }
+    
+    
+    
 
 }
 

@@ -198,6 +198,132 @@ nav{
     text-decoration: none;
     color: var(--standerd);
     border:1px solid var(--standerd);
+    margin-top: 20px;
 
    
+}
+
+
+/*****************for scrooll right***********/
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+   
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--standerd); 
+    border-radius: 10px;
+  }
+/**************************************service-section***********/
+  .scervices_section{
+    width: 100%;
+   
+    padding:50px 80px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .scervices_section h3{
+    color: var(--standerd);
+    font-size: 25px;
+    padding-bottom: 50px;
+
+
+  }
+
+  .scervices_section .scervices{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "card_1 card_2 card_3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    
+
+  }
+.scervices_section .scervices .cardcontainer_1{
+    align-items: center;
+    margin: 0 auto;
+    width: 350px;
+    height: 475px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_img{
+    width: 100%;
+    overflow: hidden;
+    height: 263px;
+    
+    
+
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_img img{
+    transition: all ease-in-out .5s;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_img img:hover{
+    
+    transform: scale(1.1);
+
+}
+
+.scervices_section .scervices .card_1{
+    grid-area: card_1;
+}
+.scervices_section .scervices .card_2{
+    grid-area: card_2;
+}
+
+.scervices_section .scervices .card_3{
+    grid-area: card_3;
+}
+
+
+.scervices_section .scervices .cardcontainer_1 .card_img img{
+    width: 100%;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_text h4{
+    color: var(--standerd);
+    padding: 10px 0;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_text p{
+    padding: 10px 0;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_text button{
+    width: 130px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid var(--standerd);
+    transition: background-color ease-in-out .5s;
+}
+
+.scervices_section .scervices .cardcontainer_1 .card_text button i{
+    color: var(--standerd);
+    font-size: 20px;
+    transition: color ease-in-out .5s;
 }
