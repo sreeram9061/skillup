@@ -1,25 +1,34 @@
 //this function for when a button hovering then chenge it is bg and color of it is text
 
- hoveringEfect=(bg,col,bgitem,text,bole)=>{
-    if(bole){
-        bgitem.style.background=bg;
-        text.style.color=col;
-        bgitem.style.transition="background ease-in-out .3s"
-        text.style.transition="color ease-in-out .3s"
-
-    }else{
-        bgitem.style.background=bg;
-        text.style.color=col;
-        bgitem.style.transition="background ease-in-out .3s"
-        text.style.transition="color ease-in-out .3s"
-    }
+hoveringEfect=(bgitem,text,bole)=>{
+   if(bole){
+    console.log("hi")
+    bgitem.style.background="#46ccdb";
+    text.style.color="white";
+    bgitem.style.transition="all ease-in-out .5s"
+    
+       
+   }else{
+       bgitem.style.transition="border ease-in-out .5s"
+       bgitem.style.transition="background ease-in-out .6s"
+     bgitem.style.background="white";
+       bgitem.style.border="1px solid #46ccdb"
+       text.style.color="#46ccdb";
+       
+       
+   }
 }
 
 // navebar right section "contact us" button
 const last_list = document.querySelector('.last_list')
 const last_list_a =document.querySelector('.last_list_a')
-last_list.addEventListener('mouseenter',()=>{ hoveringEfect('#46ccdb',"white",last_list,last_list_a,true) })
-last_list.addEventListener('mouseleave',()=>{ hoveringEfect('#cacfcb',"black",last_list,last_list_a,false) })
+last_list.addEventListener('mouseenter',()=>{ hoveringEfect(last_list,last_list_a,true) })
+last_list.addEventListener('mouseleave',()=>{ hoveringEfect(last_list,last_list_a,false) })
+
+//home page text btn hover event
+const homepagebtn =document.querySelector('.homepagebtn')
+homepagebtn.addEventListener('mouseenter',()=>{ hoveringEfect(homepagebtn,homepagebtn,true) })
+homepagebtn.addEventListener('mouseleave',()=>{ hoveringEfect(homepagebtn,homepagebtn,false) })
 
 // this section for menu icon 
 const menue =document.querySelector('.menue')
@@ -36,14 +45,15 @@ menue.addEventListener('click',()=>{
        navbar_remove_add(bole_1)
    }
 })
-//this function for remove and add a navigation slider in the smallevise
+//this function for remove and add a navigation slider in the smalldevise
 function navbar_remove_add(bole){
     if(bole){
         responsivemenubar.style.transform="translateY(0)"
      bole_1=false
     }else{
         responsivemenubar.style.transform="translateY(-1000px)"
-     bole_1=true
+        bole_1=true
     }
 
 }
+

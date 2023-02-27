@@ -20,6 +20,7 @@ nav{
     background-color: white;
     padding:0 80px;
     position: fixed;
+    top: 0;
     z-index: 9;
     
 }
@@ -70,10 +71,16 @@ nav{
 
 .navcontainer ul :nth-child(7){
    
-    background-color:var(--standerd-bg);
-    padding: 15px 3px;
+   
+    border: 1px solid var(--standerd) ;
+    padding: 15px 10px;
+   
     
     
+}
+
+.last_list .last_list_a{
+    color: var(--standerd);
 }
 .menue{
     font-size: 30px;
@@ -92,11 +99,12 @@ nav{
     right: 0;
     top: 85px;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 86px);
     justify-content: center;
     background-color: var(--standerd);
     transform: translateY(-1000px);
     transition: all ease .5s;
+    z-index: 6;
    
 }
 
@@ -114,4 +122,82 @@ nav{
 }
 .right_side_slide_navigation a:hover{
     color: #dee0de;
+}
+
+/**************************home_page************************/
+.homepagecontainer{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: white;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    padding:0 80px;
+}
+.homepagecontainer .homegrid{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: "imagecontainer textes" ;
+    grid-template-columns: 1fr 1.3fr;
+    grid-template-rows: 1fr;
+}
+
+.homepagecontainer .homegrid .imagecontainer{
+    grid-area: imagecontainer;
+    display: flex;
+    align-items: center;
+}
+
+.homepagecontainer .homegrid .imagecontainer span{
+    overflow: hidden;
+   
+    
+
+
+}
+.homepagecontainer .homegrid .imagecontainer span img{
+    transition: all ease-in-out .5s;
+    width: 100%;
+   
+    
+}
+
+.homepagecontainer .homegrid .imagecontainer span img:hover{
+    transform: scale(1.1);
+}
+
+
+.homepagecontainer .homegrid .textes{
+    grid-area: textes;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.homepagecontainer .homegrid .textes h3{
+    font-size: 25px;
+    margin-bottom: 19px;
+    color: var(--standerd);
+}
+.homepagecontainer .homegrid .textes :nth-child(2){
+    font-weight: bold;
+}
+
+.homepagecontainer .homegrid .textes p{
+    margin-bottom: 18px;
+
+}
+
+
+.homepagecontainer .homegrid .textes .homepagebtn{
+    width: 135px;
+    display: inline-block;
+    text-align: center;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: var(--standerd);
+    border:1px solid var(--standerd);
+
+   
 }
