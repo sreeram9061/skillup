@@ -11,9 +11,10 @@
 </head>
 <body>
     <!-----------------navigationbar_for largescreen------------------------>
-    <nav>
+    <nav id="navigation">
         <div class="navcontainer">
-            <img src="img/bitmap_Layer 1.svg" alt="">
+            <img class="img_1" src="img/bitmap_Layer 1.svg" alt="">
+            <img class="img_2" src="img/logo-svg-white.svg" alt="">
             <ul>
                 <li><a class="onlysix" href="">HOME</a></li>
                 <li><a class="onlysix" href="">ABOUT AUS</a></li>
@@ -38,13 +39,13 @@
     </section>
 
     <!------------------------------home_page----------------------------------->
-    <section>
+   
         <div class="homepagecontainer">
             <div class="homegrid">
                 <div class="imagecontainer">
-                    <span>
+                    <div class="imagcont">
                         <img src="https://img.freepik.com/free-photo/classmates-with-thumb-up-classroom_1098-1243.jpg" alt="">
-                    </span>
+                    </div>
                 </div>
                 <div class="textes">
                     <h3>Welcome to Our Websites</h3>
@@ -62,7 +63,7 @@
                 </div>
             </div>
         </div>
-    </section>
+   
 
     <!--------------------------service_section------------------->
 
@@ -103,6 +104,120 @@
     
         </div>
     </section>
+
+
+
+    <!-------------------scroll up button---------------->
+    <div class="upbtn" onclick="myonfunction()">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+    <script>
+         function myonfunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    window.onscroll = function(){ scrollFunction() };
+    let mybutton =document.querySelector('.upbtn')
+    let nav =document.querySelector('nav')
+    let navcontainer = document.querySelector('.navcontainer')
+    let navigation =document.getElementById('navigation')
+    let img_2 =document.querySelector('.img_2')
+    let img_1 =document.querySelector('.img_1')
+    let onlysix =document.querySelectorAll('.onlysix')
+    let bole=false
+    let last = document.querySelector('.last_list'); 
+    let last_a = document.querySelector('.last_list_a')
+    const navforsmall =document.querySelector('.right_side_slide_navigation');
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "flex";
+       nav.style.background="#46ccdb"
+       navcontainer.style.background="#46ccdb"
+       navigation.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+       img_1.style.display="none"
+       img_2.style.display="block"
+       img_2.style.margin="9px 0"
+       onlysix.forEach((e)=>{
+        e.style.color="white"
+     
+        e.addEventListener('mouseenter',()=>{
+            e.style.color="#4d8e99"
+           })
+
+        e.addEventListener('mouseleave',()=>{
+            e.style.color="white"
+           })
+        
+       })
+       last.style.border="1px solid white"
+       last_a.style.color="white"
+       last.style.background="#46ccdb"
+       last.addEventListener('mouseenter',(e)=>{
+             console.log(e)
+             e.target.children[0].style.color="#4d8e99"
+             last.style.border="1px solid #4d8e99"
+             last.style.background="#46ccdb"
+             
+           })
+           last.addEventListener('mouseleave',(e)=>{
+             console.log(e)
+             e.target.children[0].style.color="white"
+             last.style.border="1px solid white"
+             last.style.background="#46ccdb"
+             
+           })
+           
+           
+           
+
+       
+       
+      } else {
+        mybutton.style.display = "none";
+        nav.style.background="white"
+       navcontainer.style.background="white"
+       navigation.style.boxShadow="none"
+       img_1.style.display="block"
+       img_1.style.margin="16px 0"
+       img_2.style.display="none"
+       onlysix.forEach((e)=>{
+        e.style.color="black"
+     
+        e.addEventListener('mouseenter',()=>{
+            e.style.color="#46ccdb"
+           })
+
+        e.addEventListener('mouseleave',()=>{
+            e.style.color="black"
+           })
+        
+       })
+       last.style.border="1px solid #46ccdb"
+       last.style.background="white"
+       last_a.style.color="#46ccdb"
+
+       last.addEventListener('mouseenter',(e)=>{
+        last.style.border="1px solid #46ccdb"
+       last.style.background="#46ccdb"
+       last_a.style.color="white"
+             
+           })
+       last.addEventListener('mouseleave',(e)=>{
+        last.style.border="1px solid #46ccdb"
+       last.style.background="white"
+       last_a.style.color="#46ccdb"
+             
+             
+           })
+           
+
+        
+      }
+    }
+    </script>
 
 
     <script src="index.js"></script>

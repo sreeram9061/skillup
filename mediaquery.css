@@ -16,13 +16,17 @@
         gap: 10px;
         
       }
-      .scervices_section{
-        
-        margin-top: 160px;
-      }
+      
     
 
 }
+
+@media(min-width:980px) and (max-width:1136px){
+    
+
+
+}
+
 
 
 
@@ -38,9 +42,7 @@
         display: flex;
     }
 
-    .homepagecontainer{
-        margin-top: 200px;
-    }
+    
     .homepagecontainer .homegrid{
         
         grid-template-areas: "imagecontainer"
@@ -81,6 +83,9 @@
       .scervices_section{
         padding:50px 20px;
       }
+      .homepagecontainer {
+        padding: 19px 20px;
+    }
     
     
     
@@ -94,9 +99,8 @@
     .navcontainer img{
         width: 90px;
     }
-    .homepagecontainer{
-        padding:0 20px;
-        
+    .homepagecontainer {
+        padding: 19px 20px;
     }
     
 
