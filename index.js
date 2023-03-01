@@ -13,8 +13,9 @@ hoveringEfect=(fstcol,sedcol,bgitem,text,bole)=>{
        bgitem.style.transition="border ease-in-out .5s"
        bgitem.style.transition="background ease-in-out .6s"
      bgitem.style.background=fstcol;
-       bgitem.style.border="1px solid #46ccdb"
+       bgitem.style.border="1px solid sedcol"
        text.style.color=sedcol;
+       console.log("false")
        
        
    }
@@ -84,3 +85,11 @@ card_1.forEach((index)=>{
 
     })
 })
+
+//-------------------scrooling page button------------------------
+
+const scrolbutn=document.querySelector('.scroolign_btn button')
+
+
+scrolbutn.addEventListener('mouseenter',()=>{ hoveringEfect("#46ccdb","white",scrolbutn,scrolbutn,true) })
+scrolbutn.addEventListener('mouseleave',()=>{ hoveringEfect("#46ccdb","white",scrolbutn,scrolbutn,false) })

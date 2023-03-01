@@ -108,7 +108,9 @@
     </section>
 
     <section class="scrooling_cards">
-
+        <div class="heading_section">
+            <h3>TESTIMONIALS</h3>
+        </div>
         <!-- Slider main container -->
   <div class="swiper">
     <!-- Additional required wrapper -->
@@ -202,6 +204,28 @@
         
                 </div>
             </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <div class="icontext">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                             at Murray English Pedagogy at Murray State University. English Pedagogy The 48-hour degree program embeds State University. The 48-hour degree program embeds
+                        </p>
+                    </div>
+                    <div class="dateandname">
+                             <div class="date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>10-2-2023</p>
+                             </div>
+                            
+                        
+                            <p>Mike mathew</p>
+                       
+        
+                    </div>
+        
+                </div>
+            </div>
             
           </div>
           <!-- If we need pagination -->
@@ -213,6 +237,10 @@
         
           
   </div>
+
+   <div class="scroolign_btn">
+       <button>Read More</button>
+   </div>
 
     </section>
 
@@ -229,7 +257,7 @@
       document.documentElement.scrollTop = 0;
     }
 
-    window.onscroll = function(){ scrollFunction() };
+    window.onscroll = function(){ scrollFunction()};
     let mybutton =document.querySelector('.upbtn')
     let nav =document.querySelector('nav')
     let navcontainer = document.querySelector('.navcontainer')
@@ -281,10 +309,6 @@
              
            })
            
-           
-           
-
-       
        
       } else {
         mybutton.style.display = "none";
