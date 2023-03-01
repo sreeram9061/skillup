@@ -3,6 +3,7 @@
     --black:black;
     --white:white;
     --standerd-bg:#cacfcb;
+    --swiper-theme-color: white;
 }
 *{
     box-sizing: border-box;
@@ -368,4 +369,114 @@ nav{
 .upbtn i{
     color: white;
     
+}
+
+/********************************swiper-card-section**********************/
+
+
+.scrooling_cards{
+    width: 100%;
+    height: 500px;
+    background-color: var(--standerd);
+    padding:  0 0 ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.scrooling_cards .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    height: 276px;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    
+    
+}
+.scrooling_cards .cards .icontext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrooling_cards .cards .icontext i{
+    font-size: 40px;
+    padding: 16px 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -26px;
+    
+}
+.scrooling_cards .cards .icontext p{
+    text-align: center;
+    color: white;
+}
+
+.scrooling_cards .cards .dateandname{
+    height: 20px;
+    display: flex;
+    padding: 20px 0;
+    gap: 16px;
+    align-items: center;
+    position: relative;
+    top: 20px;
+    
+
+}
+
+.scrooling_cards .cards .dateandname .date{
+    display: flex;
+    gap: 5px;
+}
+
+.scrooling_cards .cards .dateandname p{
+    color: white;
+}
+
+.scrooling_cards .cards .dateandname > p{
+    font-size: 22px;
+    
+}
+
+
+.scrooling_cards .cards .dateandname i{
+    color: #044968;
+}
+
+/*********swiper style customization*************/
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    
+}
+
+
+.swiper .btn-style{
+    height: 40px;
+    width: 40px;
+    
+}
+.swiper .btn-style::after,.swiper .btn-style::before{
+  
+    display: none;
+
+}
+
+.swiper .btn-style i{
+    color: white;
+    font-size: 25px;
+
+}
+
+.swiper .swiper-pagination{
+    top: 280px !important;
+    
+}
+
+.swiper .swiper-pagination::after{
+    color: white;
 }

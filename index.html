@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="mediaquery.css">
+    <!------------swiper_min.css------------>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-----------------navigationbar_for largescreen------------------------>
@@ -103,6 +105,115 @@
             </div>
     
         </div>
+    </section>
+
+    <section class="scrooling_cards">
+
+        <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="cards">
+                    <div class="icontext">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                             at Murray English Pedagogy at Murray State University. English Pedagogy The 48-hour degree program embeds State University. The 48-hour degree program embeds
+                        </p>
+                    </div>
+                    <div class="dateandname">
+                             <div class="date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>10-2-2023</p>
+                             </div>
+                            
+                        
+                            <p>Sreeram</p>
+                       
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <div class="icontext">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                             at Murray English Pedagogy at Murray State University. English Pedagogy The 48-hour degree program embeds State University. The 48-hour degree program embeds
+                        </p>
+                    </div>
+                    <div class="dateandname">
+                             <div class="date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>10-2-2023</p>
+                             </div>
+                            
+                        
+                            <p>Mike mathew</p>
+                       
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <div class="icontext">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                             at Murray English Pedagogy at Murray State University. English Pedagogy The 48-hour degree program embeds State University. The 48-hour degree program embeds
+                        </p>
+                    </div>
+                    <div class="dateandname">
+                             <div class="date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>10-2-2023</p>
+                             </div>
+                            
+                        
+                            <p>kannan m</p>
+                       
+        
+                    </div>
+        
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="cards">
+                    <div class="icontext">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p>
+                             at Murray English Pedagogy at Murray State University. English Pedagogy The 48-hour degree program embeds State University. The 48-hour degree program embeds
+                        </p>
+                    </div>
+                    <div class="dateandname">
+                             <div class="date">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <p>10-2-2023</p>
+                             </div>
+                            
+                        
+                            <p>Mike mathew</p>
+                       
+        
+                    </div>
+        
+                </div>
+            </div>
+            
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev btn-style"> <i class="fa-solid fa-chevron-left"></i></div>
+          <div class="swiper-button-next btn-style"><i class="fa-solid fa-chevron-right"></i></div>
+        
+          
+  </div>
+
     </section>
 
 
@@ -221,5 +332,46 @@
 
 
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 2,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+     
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+     
+    }
+  }
+  
+});
+
+    </script>
+
 </body>
 </html>
