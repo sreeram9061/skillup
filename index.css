@@ -513,6 +513,9 @@ nav{
 
 }
 
+.swiper .swiper-pagination span{
+    background-color: white;
+}
 /****************news and blogss**************/
 
 .newsblogs_section{

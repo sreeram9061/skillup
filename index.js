@@ -115,7 +115,7 @@ card.forEach((index)=>{
         button_bg=e.target.childNodes[5].children[1]
         button_bg.style.background="ghostwhite"
         button_bg.style.border="1px solid rgb(147, 146, 146)"
-        button_bg.style.color="#46ccdb"
+        button_bg.style.color="black"
         e.target.childNodes[1].style.borderRadius="0"
     })
 
