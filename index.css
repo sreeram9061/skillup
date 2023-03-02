@@ -151,7 +151,7 @@ nav{
     margin-top: 100px;
     display: flex;
     align-items: center;
-    padding:118px 80px;
+    padding: 85px 80px;
 }
 .homepagecontainer .homegrid{
     display: grid;
@@ -511,3 +511,104 @@ nav{
     outline: none;
 
 }
+
+/****************news and blogss**************/
+
+.newsblogs_section{
+    width: 100%;
+    padding:25px 80px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.newsblogs_section .heading{
+    text-align: center;
+    padding: 35px 0;
+    
+}
+
+.newsblogs_section .heading h3{
+    font-size: 25px;
+    color: var(--standerd);
+}
+
+.newsblogs_section .newsblogs{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "cad_1 cad_2 cad_3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items:center;
+    gap: 10px;
+    padding: 20px 0;
+    
+   
+
+}
+
+.newsblogs_section .newsblogs .card{
+    width: 350px;
+    
+   
+
+
+}
+
+.newsblogs_section .newsblogs .cad_1{
+    grid-area: cad_1;
+}
+.newsblogs_section .newsblogs .cad_2{
+    grid-area: cad_2;
+}
+.newsblogs_section .newsblogs .cad_3{
+    grid-area: cad_3;
+}
+.newsblogs_section .newsblogs .card .card_img {
+    display: flex;
+    overflow: hidden;
+    transition: all ease-in-out .4s;
+
+}
+
+.newsblogs_section .newsblogs .card .card_img img{
+    width: 100%;
+    transition: all ease-in-out .4s;
+    filter: brightness(80%);
+
+}
+.newsblogs_section .newsblogs .card >p{
+    padding: 20px 0;
+    
+    
+}
+
+.newsblogs_section .newsblogs .card .dateandbutton{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    align-items: center;
+}
+
+.newsblogs_section .newsblogs .card .dateandbutton p{
+    display:inline;
+    padding: 15px 0;
+    
+    
+}
+
+.newsblogs_section .newsblogs .card .dateandbutton p i{
+    color: var(--standerd);
+}
+
+.newsblogs_section .newsblogs .card .dateandbutton button{
+    height: 33px;
+    width: 122px; 
+    background-color:ghostwhite;
+    border: 1px solid rgb(147, 146, 146);
+    transition: all ease-in-out .4s;
+
+}
+

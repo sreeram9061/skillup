@@ -93,3 +93,30 @@ const scrolbutn=document.querySelector('.scroolign_btn button')
 
 scrolbutn.addEventListener('mouseenter',()=>{ hoveringEfect("#46ccdb","white",scrolbutn,scrolbutn,true) })
 scrolbutn.addEventListener('mouseleave',()=>{ hoveringEfect("#46ccdb","white",scrolbutn,scrolbutn,false) })
+
+
+//-----------------this section for news an blog section code----------
+
+const card=document.querySelectorAll('.newsblogs_section .newsblogs .card')
+let button_bg
+card.forEach((index)=>{
+    index.addEventListener('mouseenter',(e)=>{
+        console.log(e)
+        e.target.childNodes[1].style.borderRadius="25px"
+        e.target.childNodes[1].children[0].style.transform="scale(1.1)";
+        button_bg=e.target.childNodes[5].children[1]
+        button_bg.style.background="#46ccdb"
+        button_bg.style.border="1px solid #46ccdb"
+        button_bg.style.color="white"
+    })
+    index.addEventListener('mouseleave',(e)=>{
+        console.log(e)
+        e.target.childNodes[1].children[0].style.transform="none";
+        button_bg=e.target.childNodes[5].children[1]
+        button_bg.style.background="white"
+        button_bg.style.border="1px solid rgb(147, 146, 146)"
+        button_bg.style.color="#46ccdb"
+        e.target.childNodes[1].style.borderRadius="0"
+    })
+
+})
