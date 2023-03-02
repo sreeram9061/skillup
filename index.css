@@ -472,6 +472,7 @@ nav{
 .swiper .btn-style{
     height: 40px;
     width: 40px;
+    outline: none;
     
 }
 .swiper .btn-style::after,.swiper .btn-style::before{
@@ -483,6 +484,7 @@ nav{
 .swiper .btn-style i{
     color: white;
     font-size: 25px;
+    outline: none;
 
 }
 
@@ -506,4 +508,6 @@ nav{
     border: 1px solid white;
     position: relative;
     top: 40px;
+    outline: none;
+
 }
