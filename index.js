@@ -97,7 +97,7 @@ scrolbutn.addEventListener('mouseleave',()=>{ hoveringEfect("#46ccdb","white",sc
 
 //-----------------this section for news an blog section code----------
 
-const card=document.querySelectorAll('.newsblogs_section .newsblogs .card')
+const card =document.querySelectorAll('.newsblogs_section .newsblogs .card')
 let button_bg
 card.forEach((index)=>{
     index.addEventListener('mouseenter',(e)=>{
@@ -120,3 +120,25 @@ card.forEach((index)=>{
     })
 
 })
+
+
+//---------------------contact aus---------------------------
+
+const profile =document.querySelectorAll('.about_us .container_of_about_us .profile_container .profile')
+
+profile.forEach(e=>{
+    e.addEventListener('mouseenter',(i)=>{
+        console.log(i)
+       i.target.children[0].children[0].style.filter="brightness(40%)"
+       i.target.children[0].children[1].style.transform="translateX(0)"
+    })
+    e.addEventListener('mouseleave',(i)=>{
+        console.log(i)
+       i.target.children[0].children[0].style.filter="brightness(100%)"
+       i.target.children[0].children[1].style.transform="translateX(60px)"
+    })
+})
+
+
+
+
