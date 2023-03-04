@@ -44,6 +44,26 @@
 
 
       }
+      .formvalidation{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px 20px;
+       }
+
+
+      .formvalidation form .container{
+        display: grid;
+        grid-template-areas: "form_1"
+                             "form_2"
+                             "form_3"
+                             "form_4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        padding-bottom: 50px;
+    
+    }
       
     
 
