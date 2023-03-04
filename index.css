@@ -630,7 +630,9 @@ nav{
 
 .about_us .container_of_about_us h3{
     padding: 20px 0;
+    padding-bottom: 30px;
     color: var(--standerd);
+    font-size: 25px;
 }
 
 .about_us .container_of_about_us .profile_container{
@@ -713,4 +715,93 @@ nav{
 .about_us .container_of_about_us .profile_container .profile .image_social_icons .icons i{
     font-size: 32px;
     color: var(--standerd);
+}
+
+/**----------------courses-----------------------------*/
+
+.courses{
+    padding: 20px 80px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.courses h3{
+    padding: 40px 0;
+    font-size: 25px;
+    color: var(--standerd);
+    
+}
+
+.courses .coursesitems{
+    display: grid;
+    grid-template-areas: "cor_1 cor_2"
+                         "cor_3 cor_4"
+                         "cor_5 cor_6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    width: 100%;
+    
+
+}
+.courses .coursesitems .slice{
+    background-color: var(--standerd);
+    transition: all ease-in-out .5s;
+    height:85px;
+    
+}
+.courses .coursesitems .slice .course_description{
+    display: none;
+}
+.courses .coursesitems .slice .ptag{
+    padding: 20px;
+    color: white;
+    line-height: 24px;
+    
+}
+
+
+
+
+.cor_1{
+    grid-area: cor_1;
+}
+.cor_2{
+    grid-area: cor_2;
+}
+.cor_3{
+    grid-area: cor_3;
+}
+.cor_4{
+    grid-area: cor_4;
+}
+.cor_5{
+    grid-area: cor_5;
+}
+.cor_6{
+    grid-area: cor_6;
+}
+
+.courses .coursesitems .icons_maintext{
+    display: flex;
+    padding: 30px  10px;
+    align-items: center;
+}
+
+.courses .coursesitems .icons_maintext i{
+    margin-left: 20px;
+    color: white;
+    font-size: 25px;
+
+}
+.courses .coursesitems .icons_maintext :nth-child(2){
+    display: none;
+}
+
+.courses .coursesitems .icons_maintext h4{
+    color: white;
+    margin-left:20px ;
+
 }

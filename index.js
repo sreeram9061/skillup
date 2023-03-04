@@ -140,5 +140,38 @@ profile.forEach(e=>{
 })
 
 
+//----------------------courses-------------------------------
+
+const cos=document.querySelectorAll('.courses .coursesitems .slice')
+let bol=false
+cos.forEach(index=>{
+    console.log(cos)
+   
+   index.addEventListener('mouseenter',e=>{
+    e.target.style.boxShadow="0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
+   })
+
+   index.addEventListener('mouseleave',e=>{
+    e.target.style.boxShadow="none"
+   })
+   index.addEventListener('click',()=>{
+    
+    if(!bol){
+        index.children[1].style.display="block"
+        index.style.height="auto"
+        index.children[0].children[0].style.display="none"
+        index.children[0].children[1].style.display="block"
+        bol=true
+    }else{
+        index.children[1].style.display="none"
+        index.style.height="85px"
+        index.children[0].children[1].style.display="none"
+        index.children[0].children[0].style.display="block"
+        bol=false
+
+    }
+    
+   })
+})
 
 
