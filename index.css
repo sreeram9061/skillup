@@ -508,7 +508,7 @@ nav{
     color: white;
     border: 1px solid white;
     position: relative;
-    top: 40px;
+    top: 10px;
     outline: none;
 
 }
@@ -521,6 +521,7 @@ nav{
 .newsblogs_section{
     width: 100%;
     padding:25px 80px;
+    padding-bottom:61px ;
     background-color: ghostwhite;
     display: flex;
     flex-direction: column;
@@ -626,6 +627,7 @@ nav{
     flex-direction: column;
     align-items: center;
     padding: 40px 80px;
+    padding-bottom:75px; 
 }
 
 .about_us .container_of_about_us h3{
@@ -725,6 +727,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 84px;
+
 }
 
 .courses h3{
@@ -814,6 +818,7 @@ nav{
     
     width: 100%;
     padding: 20px 175px;
+    padding-bottom: 50px;
 }
 .formvalidation h3{
     text-align: center;
@@ -835,7 +840,7 @@ nav{
 .formvalidation form .container div label{
     position: relative;
     transition: all ease-in .1s;
-    top: 30px;
+    top: -30px;
     left: 5px;
 }
 
@@ -877,5 +882,13 @@ nav{
 }
 .form_4{
     grid-area: form_4;
+}
+
+.formvalidation form .container .forr input:focus ~ label,.formvalidation form .container .forr input:valid ~ label{
+    top: -55px;
+}
+
+.formvalidation form .container .forr textarea:focus ~ label,.formvalidation form .container .forr textarea:valid ~ label{
+    top: -55px;
 }
 

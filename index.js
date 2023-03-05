@@ -175,46 +175,13 @@ cos.forEach(index=>{
 
 
 //----------------form section----------------------
+let buttn =document.querySelector('.formvalidation form .buttondiv button')
 
-
-let inp_texa
-inp_texa =document.querySelectorAll('.formvalidation form .container .forr')
-
-let lavel=[]
-inp_texa.forEach(e=>{
-  e.addEventListener('click',()=>{
-    
-    lavel.push(e.children[0])
-    lavel.forEach(m=>{
-        m.style.top='0'
-    })
-   
-    for(let i in lavel){
-        if(i>0){
-            lavel[i-1].style.top='30px'
-        console.log(lavel[i-1])
-        }
-        
-    }
-
-    
+buttn.addEventListener('mouseenter',()=>{
+    hoveringEfect("#46ccdb","white",buttn,buttn,true)
      
-  })
 })
-
-
-
-window.onclick = (event)=> {
-    if(!event.target.matches('.forr') && !event.target.matches('.formvalidation form .container div input') && !event.target.matches('.formvalidation form .container div textarea')){
-       
-        lavel.forEach(m=>{
-            m.style.top='30px'
-        })
-
-        lavel=[]
-        
-    }
-
-
-
-}
+buttn.addEventListener('mouseleave',()=>{
+    hoveringEfect("#46ccdb","white",buttn,buttn,false)
+     
+})
