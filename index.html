@@ -11,19 +11,19 @@
     <!------------swiper_min.css------------>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
-<body>
+<body id="Homepag">
     <!-----------------navigationbar_for largescreen------------------------>
     <nav id="navigation">
         <div class="navcontainer">
             <img class="img_1" src="img/bitmap_Layer 1.svg" alt="">
             <img class="img_2" src="img/logo-svg-white.svg" alt="">
             <ul>
-                <li><a class="onlysix" href="">HOME</a></li>
-                <li><a class="onlysix" href="">ABOUT AUS</a></li>
-                <li><a class="onlysix" href="">SERVICES</a></li>
+                <li><a  class="onlysix" href="#Homepag">HOME</a></li>
+                <li><a class="onlysix" href="#abutt">ABOUT AUS</a></li>
+                <li><a class="onlysix" href="#serv">SERVICES</a></li>
                 <li><a class="onlysix" href="">PORTFOLIO</a></li>
-                <li><a class="onlysix" href="">BLOG</a></li>
-                <li><a class="onlysix" href="">COURSES</a></li>
+                <li><a class="onlysix" href="#blogse">BLOG</a></li>
+                <li><a class="onlysix" href="#cou">COURSES</a></li>
                 <li class="last_list"><a class="last_list_a"  href="">CONTACT AUS</a></li>
             </ul>
             <i class="fa-solid fa-bars menue"></i>
@@ -31,18 +31,18 @@
     </nav>
     <!----------------navigationbarslider for small devicess---------------->
     <section class="right_side_slide_navigation">
-                <a  href="">HOME</a>
-                <a  href="">ABOUT AUS</a>
-                <a  href="">SERVICES</a>
+                <a  href="#Homepag">HOME</a>
+                <a  href="#abutt">ABOUT AUS</a>
+                <a  href="#serv">SERVICES</a>
                 <a  href="">PORTFOLIO</a>
-                <a  href="">BLOG</a>
-                <a  href="">COURSES</a>
+                <a  href="#blogse">BLOG</a>
+                <a  href="#cou">COURSES</a>
                 <a href="">CONTACT AUS</a>
     </section>
 
     <!------------------------------home_page----------------------------------->
    
-        <div class="homepagecontainer">
+        <div class="homepagecontainer" >
             <div class="homegrid">
                 <div class="imagecontainer">
                     <div class="imagcont">
@@ -59,7 +59,7 @@
                         Improve your professional practice with the Doctor of Arts in English Pedagogy at Murray State University. The 48-hour degree program embeds advanced coursework
                     </p>
                     
-                        <a class="homepagebtn" href="">Read More</a>
+                        <a id="serv" class="homepagebtn" href="">Read More</a>
                     
 
                 </div>
@@ -69,7 +69,7 @@
 
     <!--------------------------service_section------------------->
 
-    <section class="scervices_section">
+    <section class="scervices_section" >
         <h3 >SERVICES</h3>
         <div class="scervices">
             
@@ -240,7 +240,7 @@
           
   </div>
 
-   <div class="scroolign_btn">
+   <div id="blogse" class="scroolign_btn">
        <button>Read More</button>
    </div>
 
@@ -248,7 +248,7 @@
 
     <!----------------------------new&blogs---------------------->
 
-    <section class="newsblogs_section">
+    <section class="newsblogs_section" >
         <div class="heading">
             <h3>NEWS & BLOGS</h3>
         </div>
@@ -282,7 +282,7 @@
                 <p>Improve your professional practice with the Doctor of Arts in English Pedagogy at Murray...</p>
                 <div class="dateandbutton">
                     <p><i class="fa fa-calendar" aria-hidden="true"></i> 30 Nov,2021</p>
-                    <button>Read More.</button>
+                    <button id="abutt" >Read More.</button>
                 </div>
                 
             </div>
@@ -292,7 +292,7 @@
 
     <!---------------about us page------------------------->
 
-    <section class="about_us">
+    <section class="about_us" >
         
         <div class="container_of_about_us">
             <h3>ABOUT US</h3>
@@ -325,7 +325,7 @@
                     <div class="textarr">
                         <h4>Richard Willin</h4>
                         <p>ACADEMIC ADVISOR</p>
-                        <p>The Company Introduction Presentation is a useful business slide to demonstrate success of leadership.</p>
+                        <p id="cou">The Company Introduction Presentation is a useful business slide to demonstrate success of leadership.</p>
                     </div>
                 </div>
 
@@ -334,7 +334,9 @@
         </div>
     </section>
 
-    <section class="courses">
+    <!---------------------courses deteils--------------------->
+
+    <section class="courses" >
         <h3>COURSES</h3>
         <div class="coursesitems">
             <div class="slice cor_1">
@@ -440,6 +442,57 @@
         </form>
 
     </section>
+
+    <section class="mapwindow">
+        <div class="locationtext">
+           <span> <i class="fa-solid fa-location-dot"></i><h3> Our location</h3></span>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18879.42662648246!2d79.88429515738133!3d6.881691319164373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fc0237ed5d25%3A0x4c711f0161ac8139!2sThe%20Open%20University%20of%20Sri%20Lanka!5e0!3m2!1sen!2sin!4v1678033700740!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+
+    </section>
+
+    <!-----------------------footersection------------------------->
+    <footer>
+        <div class="footersection">
+            <div class="imagecontainer">
+                <img src="img/bitmap_Layer 1.svg" alt="">
+            </div>
+            <div class="servicescontainer">
+                <h3>Services</h3>
+                <p>Language training</p>
+                <p>Coaching</p>
+                <p>Vactonal training</p>
+                <p>Education</p>
+                <p>Job matching services.</p>
+            </div>
+            <div class="contactinfo">
+                <h3>Contact info</h3>
+                <span><i class="fa-regular fa-envelope"></i><p>Email:</p></span>
+                <p>skillupac@gmail.com</p>
+                <span><i class="fa-sharp fa-solid fa-phone-volume"></i><p>Phone:</p></span>
+                <p>123-456-78</p>
+                <span><i class="fa-solid fa-location-dot"></i><p>office location:</p></span>
+                <p>Some address line goes here</p>
+            </div>
+            <div class="newsletter">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our email address to get the latest news</p>
+                <form action="">
+                    <input type="text" id="emi" placeholder="Email" required >
+                <label for="emi"><i class="fa-solid fa-envelope"></i></label>
+                <button type="submit"><i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+                </form>
+                <span>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </span>
+                
+            </div>
+        </div>
+        <p>COPYRIGHT 2023 &#169 SKILLUP ACADEMY ALL RIGHT RESERVED</p>
+    </footer>
 
 
 

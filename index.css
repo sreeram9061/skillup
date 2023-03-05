@@ -892,3 +892,157 @@ nav{
     top: -55px;
 }
 
+
+/*-------------------mapsection-------------------*/
+
+
+.mapwindow{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapwindow .locationtext span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+
+}
+.mapwindow .locationtext span i{
+    font-size: 20px;
+    padding-right: 5px;
+    color: var(--standerd);
+}
+
+.mapwindow .locationtext h3{
+    text-align: center;
+   
+    font-size: 20px;
+    color:black;
+}
+
+.mapwindow iframe{
+    width: 100%;
+    height: 450px;
+
+}
+
+/*------------------------footer section---------------------*/
+
+footer{
+    background-color:whitesmoke;
+}
+footer .footersection{
+    display: grid;
+    grid-template-areas: "imagecont servi conta news";
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-row:1fr;
+    padding:50px 85px ;
+}
+.imagecontainer{
+    grid-area: imagecont;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.imagecontainer img{
+    width: 265px;
+}
+.servicescontainer{
+    grid-area: servi;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.contactinfo{
+    grid-area: conta;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.contactinfo span{
+    display: flex;
+    align-items: center;
+}
+
+.contactinfo span i{
+    padding-right: 4px;
+    color: var(--standerd);
+}
+.contactinfo span + p{
+    padding-left: 18px;
+}
+.newsletter{
+    grid-area: news;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.newsletter form {
+    position: relative;
+}
+
+.newsletter form input::-webkit-input-placeholder{
+   padding-left:35px ;
+}
+.newsletter form input{
+    border: 1px solid var(--standerd);
+    border-right: none;
+    height: 28px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 4px;
+    
+
+}
+
+.newsletter form input:valid ~ label{
+    display: none;
+}
+.newsletter form button{
+    margin-left: -5px;
+    border:none;
+    border-left: none;
+    background-color: var(--standerd);
+    height: 28px;
+    width: 28px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.newsletter form button i{
+    color: white;
+}
+.newsletter form label{
+   position:absolute;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   width: auto;
+   left:16px ;
+   top: 0;
+   
+}
+
+.newsletter form label i{
+    color: #a7a9a7;
+}
+.newsletter span {
+    display: flex;
+    gap: 10px;
+
+}
+
+.newsletter span i{
+    font-size: 25px;
+    color: var(--standerd);
+}
+
+footer > p{
+    padding: 15px 0;
+    background-color: rgb(245, 238, 238);
+    text-align: center;
+    font-size: 13px;
+    color: var(--standerd);
+}
