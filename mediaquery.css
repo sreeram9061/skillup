@@ -297,6 +297,7 @@
     .contactinfo span{
 
       justify-content: center;
+      padding-top: 7px;
     }
 
     .newsletter form label{
@@ -305,6 +306,9 @@
     .newsletter form input::-webkit-input-placeholder{
         padding-left:15px ;
      }
+     .imagecontainer img {
+        width: 218px;
+    }
 
        
 }
