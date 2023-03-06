@@ -59,6 +59,13 @@ function navbar_remove_add(bole){
 
 }
 
+function navbrr(){
+    responsivemenubar.style.transform="translateY(-1000px)"
+    bole_1=true
+    menue.classList.remove('fa-close')
+       menue.classList.add('fa-bars')
+}
+
 //----------------services section-------------------------
 
 const card_1=document.querySelectorAll('.cardcontainer_1');
