@@ -840,13 +840,20 @@ nav{
 .formvalidation form .container div label{
     position: relative;
     transition: all ease-in .1s;
-    top: -30px;
+    top: -26px;
     left: 5px;
+}
+.formvalidation form .container :nth-child(4) label{
+    top: -30px;
 }
 
 .formvalidation form .container div label i{
     margin-right: 8px;
     color: var(--standerd);
+}
+.formvalidation form .container div p{
+    position: relative;
+    top: -16px;
 }
 
 .formvalidation form .container div input,textarea{
@@ -886,10 +893,12 @@ nav{
 
 .formvalidation form .container .forr input:focus ~ label,.formvalidation form .container .forr input:valid ~ label{
     top: -55px;
+    opacity: 0.4;
 }
 
 .formvalidation form .container .forr textarea:focus ~ label,.formvalidation form .container .forr textarea:valid ~ label{
-    top: -55px;
+    top: -63px;
+    opacity: 0.4;
 }
 
 

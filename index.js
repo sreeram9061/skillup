@@ -108,7 +108,7 @@ const card =document.querySelectorAll('.newsblogs_section .newsblogs .card')
 let button_bg
 card.forEach((index)=>{
     index.addEventListener('mouseenter',(e)=>{
-        console.log(e)
+       
         e.target.childNodes[1].style.borderRadius="25px"
         e.target.childNodes[1].children[0].style.transform="scale(1.1)";
         button_bg=e.target.childNodes[5].children[1]
@@ -117,7 +117,7 @@ card.forEach((index)=>{
         button_bg.style.color="white"
     })
     index.addEventListener('mouseleave',(e)=>{
-        console.log(e)
+       
         e.target.childNodes[1].children[0].style.transform="none";
         button_bg=e.target.childNodes[5].children[1]
         button_bg.style.background="ghostwhite"
@@ -135,12 +135,12 @@ const profile =document.querySelectorAll('.about_us .container_of_about_us .prof
 
 profile.forEach(e=>{
     e.addEventListener('mouseenter',(i)=>{
-        console.log(i)
+       
        i.target.children[0].children[0].style.filter="brightness(40%)"
        i.target.children[0].children[1].style.transform="translateX(0)"
     })
     e.addEventListener('mouseleave',(i)=>{
-        console.log(i)
+       
        i.target.children[0].children[0].style.filter="brightness(100%)"
        i.target.children[0].children[1].style.transform="translateX(60px)"
     })
@@ -182,7 +182,7 @@ cos.forEach(index=>{
 
 
 //----------------form section----------------------
-let buttn =document.querySelector('.formvalidation form .buttondiv button')
+let buttn =document.querySelector('.buttondiv button')
 
 buttn.addEventListener('mouseenter',()=>{
     hoveringEfect("#46ccdb","white",buttn,buttn,true)
@@ -192,3 +192,81 @@ buttn.addEventListener('mouseleave',()=>{
     hoveringEfect("#46ccdb","white",buttn,buttn,false)
      
 })
+
+const erorObj={
+    numberError:"Phone number must have 10 digit's",
+    isNumber:"is not a number please enter vlaid 10 digit's number",
+    emailError:"Invalid emai please enter a valid email",
+    emptyError:"This feald is required"
+
+}
+
+const form =document.getElementById('validationofform')
+
+
+//------------p tag's id
+let ptagArray=[
+document.getElementById('nameid'),
+document.getElementById('phoneid'),
+document.getElementById('emailid'),
+document.getElementById('msgid')
+]
+
+
+//---------input's
+let inputArray=[
+document.getElementById('name'),
+document.getElementById('phone'),
+document.getElementById('email'),
+document.getElementById('msg')
+]
+
+console.log(inputArray)
+
+function items(j,ptagArray,inputArray,obj){
+    ptagArray[j].innerHTML=obj
+    ptagArray[j].style.color="red"
+    inputArray[j].style.borderBottom="1px solid red"
+    
+
+}
+
+function removeItems(j,ptagArray,inputArray){
+    ptagArray[j].innerHTML=""
+    inputArray[j].style.borderBottom="1px solid var(--standerd)"
+
+}
+
+boll=true
+function helo(){
+    console.log("it is calld")
+    for(let i in inputArray){
+        if(inputArray[i].value=="" || inputArray[i].value==null){
+
+            items(i,ptagArray,inputArray,erorObj.emptyError)
+            boll=false
+        }else{
+            removeItems(i,ptagArray,inputArray)
+            boll=true
+        }
+    
+    if(inputArray[1].value.length<10 && boll){
+        items(1,ptagArray,inputArray,erorObj.numberError)
+        e.preventDefault()
+       
+        
+    }
+    if(isNaN(inputArray[1].value)){
+        items(1,ptagArray,inputArray,erorObj.isNumber)
+        e.preventDefault()
+       
+        
+    }
+  }
+    
+
+}
+    
+
+
+
