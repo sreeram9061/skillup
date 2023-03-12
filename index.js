@@ -288,7 +288,7 @@ window.addEventListener('click',(e)=>{
 form.addEventListener('submit',(e)=>{
     console.log("it is calld")
     for(let i in inputArray){
-        if(inputArray[i].value=="" || inputArray[i].value==null){
+        if(inputArray[i].value=="" || inputArray[i].value==null ){
 
             items(i,ptagArray,inputArray,erorObj.emptyError)
             boll=false
@@ -310,11 +310,13 @@ form.addEventListener('submit',(e)=>{
         e.preventDefault()
     }
 
-    if( !validateEmail(inputArray[2].value)){
+    if( !validateEmail(inputArray[2].value) && inputArray[i].value!=""  ){
+        console.log('email is valided')
         items(2,ptagArray,inputArray,erorObj.emailError)
         e.preventDefault()
 
     }
+
 
 
     
