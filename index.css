@@ -272,8 +272,6 @@ nav{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 20px;
-    
-
   }
 .scervices_section .scervices .cardcontainer_1{
     align-items: center;
@@ -891,15 +889,7 @@ nav{
     grid-area: form_4;
 }
 
-.formvalidation form .container .forr input:focus ~ label,.formvalidation form .container .forr input:valid ~ label{
-    top: -55px;
-    opacity: 0.4;
-}
 
-.formvalidation form .container .forr textarea:focus ~ label,.formvalidation form .container .forr textarea:valid ~ label{
-    top: -63px;
-    opacity: 0.4;
-}
 
 
 /*-------------------mapsection-------------------*/

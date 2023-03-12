@@ -53,14 +53,14 @@ function navbar_remove_add(bole){
         responsivemenubar.style.transform="translateY(0)"
      bole_1=false
     }else{
-        responsivemenubar.style.transform="translateY(-1000px)"
+        responsivemenubar.style.transform="translateY(-2000px)"
         bole_1=true
     }
 
 }
 
 function navbrr(){
-    responsivemenubar.style.transform="translateY(-1000px)"
+    responsivemenubar.style.transform="translateY(-2000px)"
     bole_1=true
     menue.classList.remove('fa-close')
        menue.classList.add('fa-bars')
@@ -221,7 +221,13 @@ document.getElementById('email'),
 document.getElementById('msg')
 ]
 
-console.log(inputArray)
+let formArray=[
+    document.querySelector('.form_1'),
+    document.querySelector('.form_2'),
+    document.querySelector('.form_3'),
+    document.querySelector('.form_4'),    
+]
+
 
 function items(j,ptagArray,inputArray,obj){
     ptagArray[j].innerHTML=obj
@@ -238,17 +244,60 @@ function removeItems(j,ptagArray,inputArray){
 }
 
 boll=true
-function helo(){
+console.log(formArray)
+
+
+let labels
+let oldLabels
+let inputLab
+let oldinputLab
+
+formArray.forEach(function(el){
+
+    el.addEventListener('click',function(){
+        if(labels!=null){
+        oldLabels=labels
+        oldinputLab=inputLab
+        }
+        inputLab=el.children[0]
+        labels=el.children[1]
+       labels.style.top='-55px'
+       labels.style.opacity='0.5'
+
+    })
+})
+
+window.addEventListener('click',(e)=>{
+   
+      if(oldLabels!=labels &&  oldLabels!=null && !oldinputLab.value){
+
+        oldLabels.style.top='-26px'
+        oldLabels.style.opacity='1'
+        
+      }
+
+      if(e.target!=inputLab && e.target!=buttn && !oldinputLab.value ){
+
+        labels.style.top='-26px'
+        labels.style.opacity='1'
+       
+      }
+
+})
+
+form.addEventListener('submit',(e)=>{
     console.log("it is calld")
     for(let i in inputArray){
         if(inputArray[i].value=="" || inputArray[i].value==null){
 
             items(i,ptagArray,inputArray,erorObj.emptyError)
             boll=false
+            e.preventDefault()
         }else{
             removeItems(i,ptagArray,inputArray)
             boll=true
         }
+    }
     
     if(inputArray[1].value.length<10 && boll){
         items(1,ptagArray,inputArray,erorObj.numberError)
@@ -259,13 +308,24 @@ function helo(){
     if(isNaN(inputArray[1].value)){
         items(1,ptagArray,inputArray,erorObj.isNumber)
         e.preventDefault()
-       
-        
     }
-  }
-    
 
-}
+    if( !validateEmail(inputArray[2].value)){
+        items(2,ptagArray,inputArray,erorObj.emailError)
+        e.preventDefault()
+
+    }
+
+
+    
+})
+    
+const validateEmail = (email) => {
+    return email.match(
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+  };
+
     
 
 
