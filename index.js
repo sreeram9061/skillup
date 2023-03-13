@@ -310,7 +310,7 @@ form.addEventListener('submit',(e)=>{
         e.preventDefault()
     }
 
-    if( !validateEmail(inputArray[2].value) && inputArray[i].value!=""  ){
+    if( !validateEmail(inputArray[2].value) && inputArray[2].value!=""  ){
         console.log('email is valided')
         items(2,ptagArray,inputArray,erorObj.emailError)
         e.preventDefault()
