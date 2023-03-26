@@ -52,9 +52,11 @@ function navbar_remove_add(bole){
     if(bole){
         responsivemenubar.style.transform="translateY(0)"
      bole_1=false
+     disableScroll()
     }else{
         responsivemenubar.style.transform="translateY(-2000px)"
         bole_1=true
+        enableScroll()
     }
 
 }
@@ -64,7 +66,26 @@ function navbrr(){
     bole_1=true
     menue.classList.remove('fa-close')
        menue.classList.add('fa-bars')
+       enableScroll()
 }
+
+
+
+
+
+function disableScroll() {
+
+
+    document.querySelector('body').style.height='100%'
+    document.querySelector('body').style.overflow='hidden'
+  }
+    
+  function enableScroll() {
+
+    document.querySelector('body').style.height='auto'
+    document.querySelector('body').style.overflow='visible'
+  }
+
 
 //----------------services section-------------------------
 
